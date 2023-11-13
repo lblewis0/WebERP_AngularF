@@ -1,9 +1,45 @@
 @import '../../../styles.scss';
 @import '../../shared/styles/colors.scss';
 
-.compenentNotDone
+$top-main-div-height: 40px;
+
+.header-main-div
 {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     background-color: $dark-theme-03;
+    border: 1px solid yellow;
+}
+
+.header-button
+{
+    border: 1px solid lightgrey;
+    width: $top-main-div-height;
+    height: $top-main-div-height;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-padding
+{
+    padding-right: 10px;
+    border: 1px solid red;
+    height: $top-main-div-height;
+}
+
+#user-button-name
+{
+    width: 150px;
+}
+
+#user-profil
+{
+    border-radius: 50%;
 }
 

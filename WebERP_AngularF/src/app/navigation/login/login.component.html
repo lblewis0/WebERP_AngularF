@@ -1,0 +1,29 @@
+<div class="login-main-div">
+    <div class="login-form-div">
+        <form id="login-form-group" [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+            <label>Login</label>
+            <div class="login-form-inputs-div">
+                <div class="form-input-div">
+                    <label class="label-input">Identifiant:</label>
+                    <div class="input-state-div">
+                        <input class="input-text" type="text" name="username" placeholder="Username" formControlName="username">
+                    </div>  
+                </div>
+                <div class="form-input-div">
+                    <label class="label-input">Mot de passe:</label>
+                    <div class="input-state-div">
+                        <input class="input-text" type="password" name="password" placeholder="Password" formControlName="password">
+                    </div> 
+                </div>
+            </div>
+            <div class="forget-input-div">
+                <div class="forget-left-div">
+                    <input class="rememberme-checkbox" type="checkbox">
+                    <label class="rememberme-label">Remember me</label>
+                </div>
+                <label class="forgot-password-label">Forgot password?</label>
+            </div>
+            <button class="signin-button" type="submit" (click)="onSubmit()">Connexion</button>
+        </form>       
+    </div>
+</div>

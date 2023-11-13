@@ -7,11 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, 
+  imports: [CommonModule,
+            ReactiveFormsModule,
+            FormsModule, 
             RouterOutlet,
             RouterLink,
             RouterLinkActive,

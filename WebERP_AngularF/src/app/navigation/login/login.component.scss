@@ -1,0 +1,177 @@
+@import '../../shared/styles/colors.scss';
+
+$input-height: 23px;
+$input-state-div-height: $input-height + 5;
+$signin-height: 28px;
+$label-input-font-size: 12px;
+$primary-color: $primary-bue-00;
+
+.login-main-div
+{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-div
+{
+    min-height: 200px;
+    min-width: 200px;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    background-color: $dark-theme-03;
+    padding: 10px;
+
+}
+
+#login-form-group
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    // border: 1px solid yellow;
+}
+
+.login-form-inputs-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    // border: 1px solid yellow;
+    min-width: 100%;
+}
+
+.form-input-div
+{
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.input-state-div
+{
+    // border: 1px solid yellow;
+    height: $input-state-div-height;
+    border-radius: 5px;
+    border: 0px;
+    width: 100%;
+    background-color: $dark-theme-06;
+    position: relative;
+}
+
+.input-state-div:hover
+{
+    // border: 1px solid yellow;
+    background-color: $primary-color;
+}
+
+.input-state-div:focus,
+.input-state-div:active
+{
+    background-color: $primary-color;
+}
+
+.input-text
+{
+    height: $input-height;
+    width: calc(100% - 4px);
+    border-radius: 5px;
+    border: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    font-weight: 500;
+    color: $light-font-color-high-emphasis;
+    background-color: $dark-theme-10;
+    line-height: 80%;
+}
+
+.input-text:hover
+{
+    height: $input-height;
+    border: 0px;
+}
+
+.input-text:focus,
+.input-text:active
+{
+    height: $input-height;
+    border: 0px;
+}
+
+.label-input
+{
+    font-size: $label-input-font-size;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    // border: 1px solid orangered;
+
+}
+
+.forget-input-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    // border: 1px solid green;
+    font-size: $label-input-font-size;
+    
+}
+
+.forget-left-div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    // border: 1px solid magenta;
+}
+
+.rememberme-checkbox[type="checkbox"]:checked
+{
+    background-color: $primary-color;
+}
+
+.rememberme-label
+{
+    // border: 1px solid orange;
+    height: 100%;
+}
+
+.forgot-password-label
+{
+    // border: 1px solid lightgrey;
+    font-weight: 550;
+    color: $primary-color;
+}
+
+.signin-button
+{
+    min-width: 100%;
+    height: $signin-height;
+    background-color: $primary-color;
+    border-radius: 5px;
+    border: 0px;
+    color: $light-font-color-high-emphasis;
+}

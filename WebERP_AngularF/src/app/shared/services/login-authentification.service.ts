@@ -8,14 +8,19 @@ export class LoginAuthentificationService {
 
   isConnected : boolean = false
 
-  constructor() { }
+  constructor() 
+  {
+    
+  }
 
   login(loginForm: LoginForm)
   {
-    if(loginForm.username === "Louis" && loginForm.password === "accolades")
+    if(loginForm.username === "Louis" && loginForm.password === "test1234")
     {
       this.isConnected = true;
-      console.log('--login() from FakeAuthentificationService');
+      localStorage.setItem("isConnected", "true");
+      console.log('--login() from login-authentification');
+      console.log(`--local storage(isConnected): ${localStorage.getItem("isConnected")}`);
       
     }
   }
@@ -23,6 +28,8 @@ export class LoginAuthentificationService {
   logout()
   {
     this.isConnected = false;
-    console.log('--logout() from FakeAuthentificationService');
+    localStorage.setItem("isConnected", "false");
+    console.log('--logout() from login-authentification');
+    console.log(`--local storage(isConnected): ${localStorage.getItem("isConnected")}`);
   }
 }

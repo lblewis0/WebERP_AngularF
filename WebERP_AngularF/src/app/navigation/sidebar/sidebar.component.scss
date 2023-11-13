@@ -2,7 +2,7 @@
 @import '../../shared/styles/colors.scss';
 
 $nav-item-height: 35px;
-$nav-item-icon-height: 20px;
+$nav-item-icon-height: 15px;
 $nav-item-expand-icon-height: 20px;
 
 #nav-bar
@@ -11,6 +11,7 @@ $nav-item-expand-icon-height: 20px;
     height: 100%;
     width: 100%;
     background-color: $dark-theme-01;
+    color: rgba(white, 0.60);
 }
 
 .ul-nav-bar
@@ -67,11 +68,13 @@ $nav-item-expand-icon-height: 20px;
 .nav-item-div:hover
 {
     background-color: $dark-theme-03;
+    color: rgba(white, 0.87);
 }
 
 .nav-item-div:active
 {
     background-color: $dark-theme-04;
+    color: rgba(white, 0.87);
 }
 
 .ul-child-nav-bar
@@ -114,11 +117,13 @@ $nav-item-expand-icon-height: 20px;
 .nav-item-child-div:hover
 {
     background-color: $dark-theme-03;
+    color: rgba(white, 0.87);
 }
 
 .nav-item-child-div:active
 {
     background-color: $dark-theme-04;
+    color: rgba(white, 0.87);
 }
 
 .nav-item-icon
@@ -133,7 +138,6 @@ $nav-item-expand-icon-height: 20px;
 
 .nav-item-a
 {
-    color: $light-font-color-medium-emphasis;
     text-decoration: none;
     height: 100%;
     width: calc(100% - 30px - $nav-item-icon-height - $nav-item-expand-icon-height);
@@ -146,4 +150,15 @@ $nav-item-expand-icon-height: 20px;
     justify-content: center;
     border-radius: inherit;
     font-size: 14px;
+    color: $light-font-color-medium-emphasis;
+}
+
+.nav-item-a:hover
+{
+    color: $light-font-color-high-emphasis;
+}
+
+.nav-item-a:active
+{
+    color: $light-font-color-high-emphasis;
 }

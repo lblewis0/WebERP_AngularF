@@ -1,50 +1,56 @@
-$top-main-div-height: 30px;
-$bottom-main-div-height: 25px;
+@import '../app/shared/styles/colors.scss';
+@import '../styles.scss';
+
+$top-main-div-height: 40px;
+$bottom-main-div-height: 40px;
 $nav-bar-expanded-width: 300px;
 $nav-bar-reduced-width: 40px;
 
 #main-div
 {
-    border: 1px solid lightgrey;
+    // border: 1px solid lightgrey;
     height: 100%;
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background-color: $dark-theme-surface;
+    color: $light-font-color-high-emphasis;
 
-    #top-main-div
-    {
-        border: 1px solid lightgrey;
-        height: $top-main-div-height;
-    }
-
-    #center-main-div
-    {
-        border: 1px solid lightgrey;
-        height: calc(100% - $top-main-div-height - $bottom-main-div-height);
-        display: flex;
-        flex-direction: row;
-
-        #left-center-main-div
-        {
-            border: 1px solid lightgrey;
-            width: $nav-bar-expanded-width;
-            height: 100%;
-        }
-
-        #right-center-main-div
-        {
-            border: 1px solid lightgrey;
-            width: calc(100% - $nav-bar-expanded-width);
-            height: 100%;
-        }
-
-    }
-
-    #bottom-main-div
-    {
-        border: 1px solid lightgrey;
-        height: $bottom-main-div-height;
-    }
 }
+
+#top-main-div
+{
+    // border: 1px solid lightgrey;
+    height: $top-main-div-height;
+}
+
+#center-main-div
+{
+    // border: 1px solid lightgrey;
+    height: calc(100% - $top-main-div-height - $bottom-main-div-height);
+    display: flex;
+    flex-direction: row;
+}
+
+#left-center-main-div
+{
+    // border: 1px solid lightgrey;
+    width: $nav-bar-expanded-width;
+    height: 100%;
+}
+
+#right-center-main-div
+{
+    // border: 1px solid lightgrey;
+    width: calc(100% - $nav-bar-expanded-width);
+    height: 100%;
+}
+
+#bottom-main-div
+{
+    // border: 1px solid lightgrey;
+    height: $bottom-main-div-height;
+}   
 

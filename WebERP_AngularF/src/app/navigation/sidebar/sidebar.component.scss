@@ -1,0 +1,149 @@
+@import '../../../styles.scss';
+@import '../../shared/styles/colors.scss';
+
+$nav-item-height: 35px;
+$nav-item-icon-height: 20px;
+$nav-item-expand-icon-height: 20px;
+
+#nav-bar
+{
+    // border: 1px solid lightgrey;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-theme-01;
+}
+
+.ul-nav-bar
+{
+    // border: 1px solid lightgrey;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+.nav-item-li
+{
+    // border: 1px solid lightgrey;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: calc(100% - 12px);
+    border-radius: 5px; 
+}
+
+.nav-item-group-div
+{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 5px;
+    padding: 0px;
+    // border: 1px solid lightcoral;
+}
+
+.nav-item-div
+{
+    min-height: $nav-item-height;
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: $dark-theme-02;
+    // border: 1px solid lightgreen;
+}
+
+.nav-item-div:hover
+{
+    background-color: $dark-theme-03;
+}
+
+.nav-item-div:active
+{
+    background-color: $dark-theme-04;
+}
+
+.ul-child-nav-bar
+{
+    // border: 1px solid lightsalmon;
+    list-style-type: none;
+    height: fit-content;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-item-child-li
+{
+    // border: 1px solid red;
+    height: fit-content;
+    width: 100%;
+    border-radius: 5px; 
+}
+
+.nav-item-child-div
+{
+    height: $nav-item-height;
+    width:  calc(100% - 30px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: $dark-theme-02;
+    // border: 1px solid yellow;
+}
+
+.nav-item-child-div:hover
+{
+    background-color: $dark-theme-03;
+}
+
+.nav-item-child-div:active
+{
+    background-color: $dark-theme-04;
+}
+
+.nav-item-icon
+{
+    height: $nav-item-icon-height;
+}
+
+.nav-item-expand-icon
+{
+    height: $nav-item-expand-icon-height;
+}
+
+.nav-item-a
+{
+    color: $light-font-color-medium-emphasis;
+    text-decoration: none;
+    height: 100%;
+    width: calc(100% - 30px - $nav-item-icon-height - $nav-item-expand-icon-height);
+    line-height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: inherit;
+    font-size: 14px;
+}

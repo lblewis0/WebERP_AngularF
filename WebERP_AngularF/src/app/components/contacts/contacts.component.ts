@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'app-contacts',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss'
+  templateUrl: './contacts.component.html',
+  styleUrl: './contacts.component.scss'
 })
-export class NavigationComponent {
+export class ContactsComponent {
 
 }

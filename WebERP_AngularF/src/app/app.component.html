@@ -1,16 +1,16 @@
 <div id="main-div">
   <div id="top-main-div">
-    Navigation
+    <app-header></app-header>
   </div>
   <div id="center-main-div">
     <div id="left-center-main-div">
-      Menu navigation
+      <app-sidebar></app-sidebar>
     </div>
     <div id="right-center-main-div">
-      Contenu utilisateur
+      <router-outlet></router-outlet>
     </div>
   </div>
   <div id="bottom-main-div">
-    Lower Statut bar
+    <app-footer></app-footer>
   </div>
 </div>

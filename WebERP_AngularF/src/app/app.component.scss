@@ -17,7 +17,6 @@ $nav-bar-reduced-width: 40px;
     justify-content: center;
     background-color: $dark-theme-surface;
     color: $light-font-color-high-emphasis;
-
 }
 
 #top-main-div
@@ -29,9 +28,10 @@ $nav-bar-reduced-width: 40px;
 #center-main-div
 {
     // border: 1px solid lightgrey;
-    height: calc(100% - $top-main-div-height - $bottom-main-div-height);
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    height: calc(100%);
 }
 
 #left-center-main-div
@@ -44,7 +44,7 @@ $nav-bar-reduced-width: 40px;
 #right-center-main-div
 {
     // border: 1px solid lightgrey;
-    width: calc(100% - $nav-bar-expanded-width);
+    flex-grow: 1;
     height: 100%;
 }
 

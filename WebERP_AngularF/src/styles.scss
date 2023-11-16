@@ -2,7 +2,7 @@
 
 html
 {
-    height: 100%;
+    height: fit-content;
     margin: 0px;
     padding: 0px;
     color: $light-font-color-medium-emphasis;
@@ -15,7 +15,6 @@ body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    position: relative;
 }
 
 app-root
